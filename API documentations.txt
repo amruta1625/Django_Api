@@ -1,0 +1,20 @@
+The setup steps for the backend banking system
+1)install the python.
+2)set up a virtual environment.
+3)create a new project and install all the dependencies like Django framework by using a package manager such as pip for python.
+4)creating the necessary models
+5)creating the required views and adding the urls
+6)implementing the API endpoints.
+7)testing the API endpoints and doing the changes accordingly and making the migrations.
+
+| Endpoint                                 | what it does                                                         |
+| ----------------------------------------------------------------------------------------------------------------|
+| /api/users/                              | GET request to view all registered users.                            |
+| /api/users/<str:pk>/                     | GET  request to view a registered user using a primary key           |
+| /api/users/create/                       | POST request to create/register a new user                           |
+| /api/users/delete                        | DELETE request to delete all user                                    |
+| /api/users/delete/<str:pk>/              | DELETE request to delete a user using a primary key                  |
+| /api/users/update/<str:pk>/              | PUT request to update user details for a given user user             |
+| /api/transactions/                       | GET  request to view all transactions                                |
+| /api/transactions/<int:transaction_id>/  | GET   request to view a particular transaction using a transaction id|
+| /api/transactions/create                 | POST  request to create transactions                                 |
